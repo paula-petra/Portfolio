@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    color: #2b0d0a;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #faeee7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body .container{
+    width: 60%;
+    padding: 0 1.5em 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+body .container >*{
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #faeee7;
+}
+
+nav{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 0 1.5em;
+}
+
+nav h1{
+    font-size: 2.5em;
+    font-weight: 500;
+    transition-duration: 0.5s;
+}
+
+nav h1:hover{
+    text-shadow: 0 0 4px #6e1913;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+nav ul li{
+    margin: 0 0.5em;
+    transition-duration: 0.5s;
+}
+
+nav ul li:hover{
+    font-weight: bolder;
+}
+
+nav h1, nav ul li{
+    cursor: pointer;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+section{
+    width: 100%;
+    margin-bottom: 3em;
+}
+
+#section1{
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    margin-top: 90px;
+}
+
+.navSections{
+    padding: 5em 0 0;
+}
+
+#info{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#info small{
+    font-size: 1em;
+}
+
+#small{
+    margin: 1em 0;
+}
+
+#info a img{
+    width: 32px;
+    height: 32px;
+}
+
+#img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+}
+
+#img img{
+    width: 100%;
+}
+
+h2{
+    font-size: 2.25em;
+    margin: 1em 0;
+}
+
+#about p{
+    margin: 0.75em 0;
+    font-size: 1.125em;line-height: 2;
+}
+
+#about ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: circle;
+}
+
+#projects{
+    display: flex;
+    flex-direction: column;
+}
+
+#projects h2{
+    margin-bottom: 16px;
+}
+
+#projects small{
+    margin-bottom: 16px;
+}
+
+#featured{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+}
+
+#projImg{
+    grid-column: 1 / 8;
+    grid-area: 1 / 1 / -1 / 7;
+    position: relative;
+    z-index: 1;
+}
+
+#projImg a img{
+    width: 100%;
+}
+
+#projContent{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    grid-column: 7 / -1;
+    position: relative;
+    grid-area: 1 / 6 / -1 / -1;
+}
+
+h3{
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.75em;
+    margin: 0 0 1em;
+}
+
+#projContent a h3{
+    transition-duration: 0.5s;
+}
+
+#projContent a h3:hover{
+    text-shadow: 0 0 4px #6e1913;
+}
+
+#projContent p{
+    background-color: rgba(250, 225, 210, 0.8);
+    text-align: right;
+    padding: 1em;
+    font-size: 1.125em;
+    position: relative;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+#projContent ul{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    list-style: none;
+    font-family: 'Rajdhani', sans-serif;
+    margin: 0.75em 0;
+}
+
+#projContent ul li{
+    margin-left: 1em;
+}
+
+#otherProj{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#otherProj h3{
+    margin: 4em 0 2em;
+}
+
+#projList{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 2em 0 4em;
+}
+
+#projList .projListContent{
+    background-color: #fae1d2;
+    width: calc(100%/3);
+    height: auto;
+    padding:2em 1em 1em;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+}
+
+#projList .projListContent:hover{
+    box-shadow: 2px 4px 10px #6e1913;
+}
+
+.projListContent div{
+    width: 100%;
+    margin: 0;
+}
+
+#git{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    z-index: 1;
+}
+
+#git a img{
+    width: 32px;
+}
+
+#projInfo h4{
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.25em;
+    margin: 0.75em 0 1em;
+}
+
+#projInfo ul{
+    list-style: none;
+    margin: 1.5em 0 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.button{
+    background-color: #fae1d2;
+    padding: 0.75em;
+    margin: 2em 0;
+    border-radius: 15px;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 500;
+    transition-duration: 0.5s;
+}
+
+.button:hover{
+    background-color: #2b0d0a;
+    color: #fae1d2;
+}
+
+#services ul{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 3em;
+}
+
+#services ul li{
+    font-size: 1.25em;
+    margin: 0.75em 0;
+}
+
+#services div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer{
+    width: 100%;
+    padding: 1em 0 1.5em;
+    background-color: #fae1d2;
+    text-align: center;
+}
+
+#contactMe{
+    margin-top: 90px;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contactMe p{
+    font-size: 1.5em;
+    margin: 1em 0;
+}
+
+#hello{
+    font-size: 1.25em;
+}
+
+.socials img{
+    width: 48px;
+    height: 48px;
+}
